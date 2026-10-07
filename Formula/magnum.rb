@@ -5,7 +5,7 @@
 class Magnum < Formula
   desc "Review GitHub pull requests with AI agents in herdr panes"
   homepage "https://github.com/zhuravel/magnum"
-  url "https://github.com/zhuravel/magnum.git", tag: "v0.1.1", revision: "cfb884cabcbf36081c66a5a8242013650bd6fc77"
+  url "https://github.com/zhuravel/magnum.git", tag: "v0.1.2", revision: "8005f3036696b3918af4c94d285962c97ff5887d"
   license "MIT"
   head "https://github.com/zhuravel/magnum.git", branch: "master"
 
@@ -14,7 +14,7 @@ class Magnum < Formula
   depends_on :macos
 
   def install
-    system "go", "build", *std_go_args(ldflags: "-s -w -X main.version=#{version}"), "./cmd/magnum"
+    system "go", "build", *std_go_args(ldflags: "-X main.version=#{version}"), "./cmd/magnum"
   end
 
   def caveats
