@@ -5,7 +5,7 @@
 class Magnum < Formula
   desc "Review GitHub pull requests with AI agents in herdr panes"
   homepage "https://github.com/zhuravel/magnum"
-  url "https://github.com/zhuravel/magnum.git", tag: "v0.1.2", revision: "8005f3036696b3918af4c94d285962c97ff5887d"
+  url "https://github.com/zhuravel/magnum.git", tag: "v0.1.3", revision: "d51f6b29f5e3fd062af4db4de085dffc8febdfbc"
   license "MIT"
   head "https://github.com/zhuravel/magnum.git", branch: "master"
 
